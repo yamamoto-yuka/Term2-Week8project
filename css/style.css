@@ -1,0 +1,342 @@
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: lightgray;
+}
+
+body {
+  font-family: "Gotham", sans-serif;
+}
+
+.bg-dark {
+  background-color: black !important;
+}
+
+.navbar-brand {
+  font-family: "Dancing Script";
+}
+
+.navbar-nav {
+  font-size: 12px;
+}
+.navbar-nav .nav-link {
+  padding-right: 50px !important;
+}
+.navbar-nav .nav-link i {
+  font-size: 25px;
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.topimage {
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 3px;
+  filter: grayscale(30%);
+}
+
+.item1 {
+  background-image: url("../asset/Valentine.jpg");
+}
+
+.item2 {
+  background-image: url("../asset/birthday.jpg");
+}
+
+.item3 {
+  background-image: url("../asset/weeding4.jpg");
+}
+
+.btn-light {
+  border: none !important;
+}
+
+.callToAction {
+  color: white;
+}
+.callToAction h1 {
+  font-size: 50px;
+  padding-top: 320px;
+}
+.callToAction p {
+  padding: 30px;
+}
+.callToAction button {
+  padding: 14px 81px;
+}
+
+.Ads {
+  margin-top: 100px;
+  background-color: #8f6a6a;
+  color: white;
+}
+.Ads span {
+  font-size: 18px;
+}
+
+.filter {
+  margin-top: 100px;
+  font-weight: 100;
+}
+.filter p {
+  font-size: 11px;
+}
+
+.filtering {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: center;
+  padding: 0;
+}
+
+.filtering li span {
+  display: block;
+  padding: 10px 30px;
+  text-decoration: none;
+  color: #333;
+}
+
+.filtering li {
+  margin-bottom: 20px;
+}
+
+.filtering li span {
+  position: relative;
+}
+
+.filtering .current,
+.filtering span:hover {
+  color: #8f6a6a;
+  cursor: pointer;
+}
+
+.filtering span::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  width: 80%;
+  height: 2px;
+  background: #8f6a6a;
+  transition: all 0.3s;
+  transform: scale(0, 1);
+  transform-origin: left top;
+}
+
+.filtering .current::after,
+.filtering span:hover::after {
+  transform: scale(1, 1);
+}
+
+.filtering span.active {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+
+  .filtering-list-cont {
+    margin: 50px 0 0;
+  }
+}
+.EventTitele .allflower {
+  font-size: 32px;
+  font-weight: bold;
+}
+.EventTitele h2 {
+  margin-top: 50px;
+  font-size: 24px;
+}
+
+#id {
+  margin-top: 250px;
+}
+
+.eventItem {
+  margin-top: 50px;
+}
+
+.carouselContainer {
+  height: 300px;
+}
+.carouselContainer .carousel {
+  height: 100%;
+}
+.carouselContainer .carousel .carousel-inner {
+  height: 100%;
+}
+.carouselContainer .carousel .carousel-inner .carousel-item {
+  height: 100%;
+}
+.carouselContainer .carousel .carousel-inner .carousel-item .carouselBox {
+  height: 100%;
+}
+.carouselContainer .carousel .carousel-inner .carousel-item .carouselBox .carouselImage {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 3px;
+  filter: grayscale(30%);
+  height: 100%;
+}
+.carouselContainer .carousel .carousel-inner .carousel-item .carouselBox .carouselImage:last-child {
+  margin-top: 10px;
+}
+
+.Contents {
+  height: 600px;
+}
+.Contents .eventcontents {
+  height: 100%;
+  padding-top: 25px;
+}
+.Contents .eventcontents .product_name {
+  font-size: 24px;
+}
+.Contents .eventcontents .product_describe {
+  font-size: 15px;
+}
+.Contents .eventcontents .product_price {
+  font-weight: bold;
+  font-size: 30px;
+  font-family: "Playfair Display";
+}
+.Contents button {
+  margin: 50px 0;
+  height: 50px;
+  border: 1px solid black !important;
+  background-color: white !important;
+}
+.Contents button:hover {
+  background-color: lightgray !important;
+}
+
+footer {
+  background-color: #dbcdcd;
+  font-weight: 100;
+  border-top: 1px solid lightgrey;
+  margin-top: 40px;
+  padding: 24px;
+}
+footer .sns {
+  font-size: 24px;
+}
+
+@media (min-width: 767px) {
+  .navbar-brand {
+    font-size: 25px;
+  }
+
+  .row > * {
+    padding: 0;
+  }
+
+  .callToAction h1 {
+    padding-top: 400px;
+  }
+
+  .carouselContainer .carousel .carousel-inner {
+    padding: 12px;
+  }
+
+  .Contents {
+    padding: 25px;
+  }
+  .Contents .eventcontents p {
+    margin: 0 auto;
+  }
+  .Contents .eventcontents .product_describe {
+    font-size: 18px;
+  }
+  .Contents .eventcontents button {
+    margin: 0 auto;
+  }
+
+  footer {
+    margin-top: 100px;
+  }
+}
+@media (min-width: 1000px) {
+  .navbar-brand {
+    font-size: 40px;
+  }
+
+  .navContainer {
+    flex-direction: column;
+  }
+
+  .row > * {
+    padding: 0;
+  }
+
+  .callToAction h1 {
+    padding-top: 320px;
+  }
+
+  .EventTitele h2 {
+    margin-top: 150px;
+    font-size: 32px;
+  }
+
+  .carouselContainer {
+    height: 400px;
+  }
+
+  .Contents {
+    padding: 0px 10px 150px 10px;
+  }
+  .Contents .eventcontents .product_describe {
+    font-size: 14px;
+  }
+  .Contents .eventcontents button {
+    margin: 0 auto;
+  }
+
+  footer {
+    margin-top: 120px;
+  }
+}
+@media (min-width: 1920px) {
+  .callToAction h1 {
+    padding-top: 430px;
+    font-size: 75px;
+  }
+  .callToAction p {
+    font-size: 32px;
+  }
+
+  .EventTitele h2 {
+    margin-top: 150px;
+  }
+
+  .carouselContainer {
+    height: 400px;
+  }
+
+  .Contents {
+    padding: 0px 10px 150px 10px;
+  }
+  .Contents .eventcontents .product_describe {
+    font-size: 14px;
+  }
+  .Contents .eventcontents button {
+    margin: 0 auto;
+  }
+
+  footer {
+    margin-top: 120px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
