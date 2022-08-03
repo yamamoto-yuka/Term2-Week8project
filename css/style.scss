@@ -1,357 +1,486 @@
-                    // Base----------------
-                    $image: "../asset";
-                    @mixin imageFormat {
-                        background-position: center;
-                        background-repeat: no-repeat;
-                        background-size: cover;
-                        border-radius: 3px;
-                        filter: grayscale(30%);
-                    }
-                    
-                    a {
-                        color: black;
-                        text-decoration: none;
-                    }
-                    
-                    a:hover {
-                        color: lightgray;
-                    }
-                    
-                    body {
-                        font-family: 'Gotham', sans-serif;
-                    }
-                    
-                    // Header----------------
-                    .bg-dark {
-                        background-color: black !important;
-                    }
-                    
-                    .navbar-brand {
-                        font-family: 'Dancing Script';
-                    }
-                    
-                    .navbar-nav {
-                        font-size: 12px;
-                        .nav-link {
-                            padding-right: 50px !important;
-                            i {
-                                font-size: 25px;
-                            }
-                        }
-                    }
-                    
-                    // Top banner----------------
-                    .row {
-                        margin-left: 0;
-                        margin-right: 0;
-                    }
-                    
-                    .topimage {
-                        height: 100vh;
-                        @include imageFormat();
-                    }
-                    
-                    .item1 {
-                        background-image: url($image + "/Valentine.jpg" );
-                    }
-                    
-                    .item2 {
-                        background-image: url($image + "/birthday.jpg" );
-                    }
-                    
-                    .item3 {
-                        background-image: url($image + "/weeding4.jpg" );
-                    }
-                    
-                    .btn-light {
-                        border: none !important;
-                    }
-                    
-                    .callToAction {
-                        color: white;
-                        h1 {
-                            font-size: 50px;
-                            padding-top: 320px;
-                        }
-                        p {
-                            padding: 30px;
-                        }
-                        button {
-                            padding: 14px 81px;
-                        }
-                    }
-                    
-                    .Ads {
-                        margin-top: 100px;
-                        background-color: #8f6a6a;
-                        color: white;
-                        span {
-                            font-size: 18px;
-                        }
-                    }
-                    
-                    // Filter -----------------
-                    .filter {
-                        margin-top: 100px;
-                        font-weight: 100;
-                        p {
-                            font-size: 11px;
-                        }
-                    }
-                    
-                    .filtering {
-                        display: flex;
-                        flex-wrap: wrap;
-                        list-style: none;
-                        justify-content: center;
-                        padding: 0;
-                    }
-                    
-                    .filtering li span {
-                        display: block;
-                        padding: 10px 30px;
-                        text-decoration: none;
-                        color: #333;
-                    }
-                    
-                    .filtering li {
-                        margin-bottom: 20px;
-                    }
-                    
-                    .filtering li span {
-                        position: relative;
-                    }
-                    
-                    .filtering .current,
-                    .filtering span:hover {
-                        color: #8f6a6a;
-                        cursor: pointer;
-                    }
-                    
-                    .filtering span::after {
-                        content: '';
-                        position: absolute;
-                        bottom: 0;
-                        left: 10%;
-                        width: 80%;
-                        height: 2px;
-                        background: #8f6a6a;
-                        transition: all .3s;
-                        transform: scale(0, 1);
-                        transform-origin: left top;
-                    }
-                    
-                    .filtering .current::after,
-                    .filtering span:hover::after {
-                        transform: scale(1, 1);
-                    }
-                    
-                    .filtering span.active {
-                        font-weight: bold;
-                    }
-                    
-                    @media screen and (max-width:768px) {
-                        .container {
-                            width: 100%;
-                        }
-                        .filtering-list-cont {
-                            margin: 50px 0 0;
-                        }
-                    }
-                    
-                    // Main ----------------
-                    .EventTitele {
-                        .allflower {
-                            font-size: 32px;
-                            font-weight: bold;
-                        }
-                        h2 {
-                            margin-top: 50px;
-                            font-size: 24px;
-                        }
-                    }
-                    
-                    #id {
-                        margin-top: 250px;
-                    }
-                    
-                    .eventItem {
-                        margin-top: 50px;
-                    }
-                    
-                    .carouselContainer {
-                        height: 300px;
-                        .carousel {
-                            height: 100%;
-                            .carousel-inner {
-                                height: 100%;
-                                .carousel-item {
-                                    height: 100%;
-                                    .carouselBox {
-                                        height: 100%;
-                                        .carouselImage {
-                                            @include imageFormat();
-                                            height: 100%;
-                                        }
-                                        .carouselImage:last-child {
-                                            margin-top: 10px;
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                    
-                    .Contents {
-                        height: 600px;
-                        .eventcontents {
-                            height: 100%;
-                            padding-top: 25px;
-                            .product_name {
-                                font-size: 24px;
-                            }
-                            .product_describe {
-                                font-size: 15px;
-                            }
-                            .product_price {
-                                font-weight: bold;
-                                font-size: 30px;
-                                font-family: 'Playfair Display';
-                            }
-                        }
-                        button {
-                            margin: 50px 0;
-                            height: 50px;
-                            border: 1px solid black !important;
-                            background-color: white!important;
-                        }
-                        button:hover {
-                            background-color: lightgray!important;
-                        }
-                    }
-                    
-                    footer {
-                        background-color: #dbcdcd;
-                        font-weight: 100;
-                        border-top: 1px solid lightgrey;
-                        margin-top: 40px;
-                        padding: 24px;
-                        .sns {
-                            font-size: 24px;
-                        }
-                    }
-                    
-                    // iPad ----------------
-                    @media (min-width: 767px) {
-                        .navbar-brand {
-                            font-size: 25px;
-                        }
-                        .row>* {
-                            padding: 0;
-                        }
-                        .callToAction {
-                            h1 {
-                                padding-top: 400px;
-                            }
-                        }
-                        .carouselContainer {
-                            .carousel {
-                                .carousel-inner {
-                                    padding: 12px;
-                                }
-                            }
-                        }
-                        .Contents {
-                            padding: 25px;
-                            .eventcontents {
-                                p {
-                                    margin: 0 auto;
-                                }
-                                .product_describe {
-                                    font-size: 18px;
-                                }
-                                button {
-                                    margin: 0 auto;
-                                }
-                            }
-                        }
-                        footer {
-                            margin-top: 100px;
-                        }
-                    }
-                    
-                    // Desktop ----------------
-                    @media (min-width: 1000px) {
-                        .navbar-brand {
-                            font-size: 40px;
-                        }
-                        .navContainer {
-                            flex-direction: column;
-                        }
-                        .row>* {
-                            padding: 0;
-                        }
-                        .callToAction {
-                            h1 {
-                                padding-top: 320px;
-                            }
-                        }
-                        .EventTitele {
-                            h2 {
-                                margin-top: 150px;
-                                font-size: 32px;
-                            }
-                        }
-                        .carouselContainer {
-                            height: 400px;
-                        }
-                        .Contents {
-                            padding: 0px 10px 150px 10px;
-                            .eventcontents {
-                                .product_describe {
-                                    font-size: 14px;
-                                }
-                                button {
-                                    margin: 0 auto;
-                                }
-                            }
-                        }
-                        footer {
-                            margin-top: 120px;
-                        }
-                    }
-                    
-                    // Desktop ----------------
-                    @media (min-width: 1920px) {
-                        .callToAction {
-                            h1 {
-                                padding-top: 430px;
-                                font-size: 75px;
-                            }
-                            p {
-                                font-size: 32px;
-                            }
-                        }
-                        .EventTitele {
-                            h2 {
-                                margin-top: 150px;
-                            }
-                        }
-                        .carouselContainer {
-                            height: 400px;
-                        }
-                        .Contents {
-                            padding: 0px 10px 150px 10px;
-                            .eventcontents {
-                                .product_describe {
-                                    font-size: 14px;
-                                }
-                                button {
-                                    margin: 0 auto;
-                                }
-                            }
-                        }
-                        footer {
-                            margin-top: 120px;
-                        }
-                    }
+// Base----------------
+$image: "../asset";
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+@mixin imageFormat {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 3px;
+  filter: grayscale(30%);
+}
+
+h2 {
+  color: #563b3b;
+}
+
+a {
+  color: rgb(27, 27, 27);
+  text-decoration: none;
+}
+
+a:hover {
+  color: #563b3b;
+}
+
+body {
+  font-family: "Merriweather", serif;
+}
+
+// Header----------------
+header {
+  height: 10vh;
+  width: 100%;
+  position: relative;
+  background-color: #ffffff;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+  overflow: hidden;
+}
+
+nav {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  a {
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: #563b3b;
+    font-family: "Raleway", sans-serif;
+  }
+  a:hover {
+    color: lightgray;
+  }
+}
+
+.hamburger {
+  width: 30px;
+  background-color: transparent;
+  border-color: transparent;
+  z-index: 4;
+  span {
+    height: 1px;
+    width: 100%;
+    position: relative;
+    display: block;
+    background-color: #563b3b;
+    transition: all 0.5s ease-in-out;
+  }
+  span:nth-child(1) {
+    top: 0;
+  }
+  span:nth-child(2) {
+    margin: 10px 0;
+  }
+  span:nth-child(3) {
+    top: 0;
+  }
+}
+
+.hamburger.active {
+  span {
+    background-color: #ffffff;
+  }
+  span:nth-child(1) {
+    top: 7px;
+    transform: rotate(45deg);
+  }
+  span:nth-child(2) {
+    opacity: 0;
+  }
+  span:nth-child(3) {
+    top: -15px;
+    transform: rotate(-45deg);
+  }
+}
+
+.cart {
+  svg {
+    height: 30px;
+    width: 30px;
+    fill: #563b3b;
+  }
+  svg:hover {
+    fill: lightgray;
+  }
+}
+
+.nav-links {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  background-color: #563b3b;
+  display: none;
+  opacity: 0;
+  ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0;
+    transition: all 0.8s ease-in-out;
+    li {
+      margin-bottom: 2rem;
+      list-style: none;
+      a {
+        font-size: 1.8rem;
+        color: #ffffff;
+      }
+      a:hover {
+        font-size: 1.8rem;
+        color: lightgrey;
+      }
+    }
+    li:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+.nav-links.active {
+  display: block;
+  opacity: 1;
+}
+
+// Top banner----------------
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.topimage {
+  height: 100vh;
+  @include imageFormat();
+}
+
+.item1 {
+  background-image: url($image + "/Valentine.jpg");
+}
+
+.item2 {
+  background-image: url($image + "/birthday.jpg");
+}
+
+.item3 {
+  background-image: url($image + "/weeding4.jpg");
+}
+
+.btn-light {
+  border: none !important;
+}
+
+.callToAction {
+  color: white;
+  h1 {
+    font-size: 50px;
+    padding-top: 320px;
+  }
+  p {
+    padding: 30px;
+  }
+  button {
+    padding: 14px 81px;
+  }
+}
+
+.Ads {
+  margin-top: 100px;
+  background-color: #8f6a6a;
+  h2 {
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: white;
+    font-family: "Raleway", sans-serif;
+    span {
+      font-size: 1rem;
+    }
+  }
+}
+
+// Filter -----------------
+.filter {
+  margin-top: 100px;
+  font-weight: 100;
+  p {
+    font-weight: 300;
+    font-family: "Raleway", sans-serif;
+  }
+  a {
+    font-size: 11px;
+  }
+}
+
+.filtering {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: center;
+  padding: 0;
+}
+
+.filtering li span {
+  display: block;
+  padding: 10px 30px;
+  text-decoration: none;
+  color: #333;
+}
+
+.filtering li {
+  margin-bottom: 20px;
+}
+
+.filtering li span {
+  position: relative;
+}
+
+.filtering .current,
+.filtering span:hover {
+  color: #8f6a6a;
+  cursor: pointer;
+}
+
+.filtering span::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  width: 80%;
+  height: 2px;
+  background: #8f6a6a;
+  transition: all 0.3s;
+  transform: scale(0, 1);
+  transform-origin: left top;
+}
+
+.filtering .current::after,
+.filtering span:hover::after {
+  transform: scale(1, 1);
+}
+
+.filtering span.active {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+  .filtering-list-cont {
+    margin: 50px 0 0;
+  }
+}
+
+// Main ----------------
+.EventTitele {
+  .allflower {
+    font-size: 32px;
+    font-weight: bold;
+  }
+  h2 {
+    margin-top: 50px;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: "Raleway", sans-serif;
+  }
+}
+
+#id {
+  margin-top: 250px;
+}
+
+.eventItem {
+  margin-top: 50px;
+}
+
+.carouselContainer {
+  height: 300px;
+  .carousel {
+    height: 100%;
+    .carousel-inner {
+      height: 100%;
+      .carousel-item {
+        height: 100%;
+        .carouselBox {
+          height: 100%;
+          .carouselImage {
+            @include imageFormat();
+            height: 100%;
+          }
+          .carouselImage:last-child {
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.Contents {
+  height: 600px;
+  .eventcontents {
+    height: 100%;
+    padding-top: 25px;
+    .product_name {
+      font-size: 24px;
+      font-weight: bold;
+      font-family: "Raleway", sans-serif;
+    }
+    .product_describe {
+      font-size: 15px;
+    }
+    .product_price {
+      font-size: 28px;
+      font-weight: 300;
+      font-family: "Raleway", sans-serif;
+      font-style: italic;
+    }
+  }
+  button {
+    margin: 50px 0;
+    height: 50px;
+    border: 1px solid #563b3b !important;
+    background-color: white !important;
+  }
+  button:hover {
+    background-color: lightgray !important;
+  }
+}
+
+footer {
+  margin-top: 40px;
+  padding: 24px;
+  font-weight: 100;
+  background-color: #563b3b;
+  color: white;
+  a {
+    color: white;
+  }
+  a:hover {
+    color: #8f6a6a;
+  }
+  .sns {
+    font-size: 1.5rem;
+  }
+  small {
+    font-size: 0.8rem;
+  }
+}
+
+// iPad ----------------
+@media (min-width: 767px) {
+  .navbar-brand {
+    font-size: 25px;
+  }
+  .row > * {
+    padding: 0;
+  }
+  .callToAction {
+    h1 {
+      padding-top: 400px;
+    }
+  }
+  .carouselContainer {
+    .carousel {
+      .carousel-inner {
+        padding: 12px;
+      }
+    }
+  }
+  .Contents {
+    padding: 25px;
+    .eventcontents {
+      p {
+        margin: 0 auto;
+      }
+      .product_describe {
+        font-size: 18px;
+      }
+      button {
+        margin: 0 auto;
+      }
+    }
+  }
+  footer {
+    margin-top: 100px;
+  }
+}
+
+// Desktop ----------------
+@media (min-width: 1000px) {
+  .navbar-brand {
+    font-size: 40px;
+  }
+  .navContainer {
+    flex-direction: column;
+  }
+  .row > * {
+    padding: 0;
+  }
+  .callToAction {
+    h1 {
+      padding-top: 320px;
+    }
+  }
+  .EventTitele {
+    h2 {
+      margin-top: 150px;
+      font-size: 32px;
+    }
+  }
+  .carouselContainer {
+    height: 400px;
+  }
+  .Contents {
+    padding: 0px 10px 150px 10px;
+    .eventcontents {
+      .product_describe {
+        font-size: 14px;
+      }
+      button {
+        margin: 0 auto;
+      }
+    }
+  }
+  footer {
+    margin-top: 120px;
+  }
+}
+
+// Desktop ----------------
+@media (min-width: 1920px) {
+  .callToAction {
+    h1 {
+      padding-top: 430px;
+      font-size: 75px;
+    }
+    p {
+      font-size: 32px;
+    }
+  }
+  .EventTitele {
+    h2 {
+      margin-top: 150px;
+    }
+  }
+  .carouselContainer {
+    height: 400px;
+  }
+  .Contents {
+    padding: 0px 10px 150px 10px;
+    .eventcontents {
+      .product_describe {
+        font-size: 14px;
+      }
+      button {
+        margin: 0 auto;
+      }
+    }
+  }
+  footer {
+    margin-top: 120px;
+  }
+}
