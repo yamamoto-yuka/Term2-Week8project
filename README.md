@@ -40,8 +40,8 @@ wedding, memorial etc)
 ![datastructure](https://user-images.githubusercontent.com/84278263/182690921-7e5262a2-8796-422d-9d38-04f7ed6955a5.png)
 
 ### MySQL Stored Procedures
-    1. Get all products
-    2. Get products according to a specific occasion
+1. Get all products
+2. Get products according to a specific occasion
     
 ![SP](https://user-images.githubusercontent.com/84278263/182687243-710afd1f-613e-4845-b3d0-26dfac463ce3.png)
 
