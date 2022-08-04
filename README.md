@@ -1,4 +1,4 @@
-# A local florist e-commerce site project
+# 🌹A local florist e-commerce site project
 
 (11-Feb-2022 school project)
 
