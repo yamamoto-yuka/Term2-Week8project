@@ -4,7 +4,7 @@ class Flowers
 {
   private $host = "134.122.33.23";
   private $username = "myadmin";
-  private $password = "MySQL@dmin!12345root";
+  private $password = "MySQL@dmin!12345";
   private $dbName = "Flowers";
   private $port = 3306;
 
