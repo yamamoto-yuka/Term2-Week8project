@@ -2,9 +2,9 @@
 
 class Flowers
 {
-  private $host = "147.182.207.117";
+  private $host = "134.122.33.23";
   private $username = "myadmin";
-  private $password = "MySQL@dmin!12345";
+  private $password = "MySQL@dmin!12345root";
   private $dbName = "Flowers";
   private $port = 3306;
 
