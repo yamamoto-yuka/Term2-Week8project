@@ -2,8 +2,6 @@
 
 (11-Feb-2022 school project)
 
-Demo site [here](https://jflower.yukayamamoto.me/).
-
 ![jflowerr](https://user-images.githubusercontent.com/84278263/182692169-a3a14dc7-42de-456b-be38-e0de39cd5ca6.gif)
 
 
